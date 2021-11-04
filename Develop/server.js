@@ -15,6 +15,8 @@ app.use(express.json());
 
 app.use(express.static(__dirname));
 
+app.use(express.static('public'));
+
 //Require routes file
 require('./routes/routes')(app);
 
